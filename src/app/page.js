@@ -1,3 +1,4 @@
+"use client";
 export const metadata = { title: "Billionaire Gang — Home" };
 
 export default function Home() {
