@@ -14,11 +14,11 @@ export default function RootLayout({ children }) {
           }}
         >
           {/* Logo + Title side by side */}
-          <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
             <img
               src="/logo.png"
               alt="Billionaire Gang Nonprofit Logo"
-              style={{ height: "40px", width: "40px" }}
+              style={{ height: "60px", width: "60px" }}
             />
             <h2 style={{ margin: 0 }}>Billionaire Gang Nonprofit</h2>
           </div>
