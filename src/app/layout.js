@@ -3,15 +3,13 @@
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body style={{ margin: 0, fontFamily: "sans-serif", lineHeight: 1.6 }}>
-        
-        {/* Header */}
+      <body style={{ margin: 0, fontFamily: "sans-serif" }}>
         <header
           style={{
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            padding: "10px 40px",
+            padding: "8px 20px", // tighter padding
             borderBottom: "1px solid #ddd",
           }}
         >
@@ -20,7 +18,7 @@ export default function RootLayout({ children }) {
             <ul
               style={{
                 display: "flex",
-                gap: "20px",
+                gap: "20px", // less space between links
                 margin: 0,
                 padding: 0,
                 listStyle: "none",
@@ -33,24 +31,29 @@ export default function RootLayout({ children }) {
           </nav>
         </header>
 
-        {/* Sections */}
-        <main style={{ maxWidth: "900px", margin: "40px auto", padding: "0 20px" }}>
-          <section id="about" style={{ marginBottom: "60px" }}>
+        <main
+          style={{
+            maxWidth: "800px",
+            margin: "0 auto",
+            padding: "20px",
+            lineHeight: "1.4",
+          }}
+        >
+          <section id="about" style={{ marginBottom: "40px" }}>
             <h3>About</h3>
             <p>Edit this section with your About content.</p>
           </section>
 
-          <section id="mission" style={{ marginBottom: "60px" }}>
+          <section id="mission" style={{ marginBottom: "40px" }}>
             <h3>Mission</h3>
             <p>Edit this section with your Mission content.</p>
           </section>
 
-          <section id="team" style={{ marginBottom: "60px" }}>
+          <section id="team" style={{ marginBottom: "40px" }}>
             <h3>Team</h3>
             <p>Edit this section with your Team content.</p>
           </section>
         </main>
-
       </body>
     </html>
   );
