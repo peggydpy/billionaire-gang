@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
             <img
               src="/logo.png"
               alt="Billionaire Gang Nonprofit Logo"
-              style={{ height: "60px", width: "60px" }}
+              style={{ height: "100px", width: "100px" }}
             />
             <h2 style={{ margin: 0 }}>Billionaire Gang Nonprofit</h2>
           </div>
@@ -46,3 +46,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
