@@ -30,20 +30,20 @@ export default function RootLayout({ children }) {
           </div>
 
           <nav>
-            <ul
-              style={{
-                display: "flex",
-                gap: "30px",
-                margin: 0,
-                padding: 0,
-                listStyle: "none",
-              }}
-            >
-              <li><a href="#about" style={linkStyle}>About</a></li>
-              <li><a href="#mission" style={linkStyle}>Mission</a></li>
-              <li><a href="#team" style={linkStyle}>Team</a></li>
-            </ul>
-          </nav>
+  <ul style={{
+    display: "flex",
+    gap: "30px",
+    margin: 0,
+    padding: 0,
+    listStyle: "none",
+  }}>
+    <li><a href="#about" style={linkStyle}>About</a></li>
+    <li><a href="#mission" style={linkStyle}>Mission</a></li>
+    <li><a href="#team" style={linkStyle}>Team</a></li>
+    <li><a href="#contact" style={linkStyle}>Contact</a></li>   {/* ← new Contact link */}
+  </ul>
+</nav>
+
         </header>
 
         {/* ABOUT SECTION */}
