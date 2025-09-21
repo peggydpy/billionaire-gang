@@ -25,10 +25,21 @@ export default function RootLayout({ children }) {
           </div>
 
           <nav>
-            <a href="#about" style={{ margin: "0 10px" }}>About</a>
-            <a href="#mission" style={{ margin: "0 10px" }}>Mission</a>
-            <a href="#team" style={{ margin: "0 10px" }}>Team</a>
-          </nav>
+  <ul
+    style={{
+      display: "flex",
+      gap: "20px",
+      margin: 0,
+      padding: 0,
+      listStyle: "none",
+    }}
+  >
+    <li><a href="#about">About</a></li>
+    <li><a href="#mission">Mission</a></li>
+    <li><a href="#team">Team</a></li>
+  </ul>
+</nav>
+
         </header>
 
         <main
