@@ -3,120 +3,122 @@
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body style={{ margin: 0, fontFamily: "Arial, sans-serif" }}>
+        {/* HEADER */}
         <header
           style={{
             display: "flex",
-            alignItems: "center",
             justifyContent: "space-between",
-            padding: "16px 32px",
-            borderBottom: "1px solid #eee",
+            alignItems: "center",
+            padding: "20px 40px",
+            borderBottom: "1px solid #ddd",
+            backgroundColor: "#fff",
+            position: "sticky",
+            top: 0,
+            zIndex: 1000,
           }}
         >
-          <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+          <div style={{ display: "flex", alignItems: "center" }}>
             <img
               src="/logo.png"
               alt="Billionaire Gang Logo"
-              style={{ width: "70px", height: "auto" }}
+              style={{ height: "60px", marginRight: "15px" }}
             />
-            <h1 style={{ fontSize: "22px", fontWeight: "700" }}>
+            <h1 style={{ fontSize: "22px", margin: 0 }}>
               Billionaire Gang Nonprofit
             </h1>
           </div>
 
           <nav>
-  <ul
-    style={{
-      display: "flex",
-      gap: "20px",
-      margin: 0,
-      padding: 0,
-      listStyle: "none",
-    }}
-  >
-    <li><a href="#about">About</a></li>
-    <li><a href="#mission">Mission</a></li>
-    <li><a href="#team">Team</a></li>
-  </ul>
-</nav>
-
+            <ul
+              style={{
+                display: "flex",
+                gap: "30px",
+                margin: 0,
+                padding: 0,
+                listStyle: "none",
+              }}
+            >
+              <li><a href="#about" style={linkStyle}>About</a></li>
+              <li><a href="#mission" style={linkStyle}>Mission</a></li>
+              <li><a href="#team" style={linkStyle}>Team</a></li>
+            </ul>
+          </nav>
         </header>
 
-        <main
+        {/* ABOUT SECTION */}
+        <section
+          id="about"
           style={{
-            display: "flex",
-            justifyContent: "center",
-            padding: "40px",
+            padding: "80px 20px",
+            backgroundColor: "#f9f9f9",
+            textAlign: "center",
           }}
         >
-          <div style={{ maxWidth: "800px", width: "100%" }}>
-            {/* About Section */}
-            <section
-              id="about"
-              style={{ marginBottom: "40px", textAlign: "center" }}
-            >
-              <h3 style={{ fontSize: "22px", fontWeight: "700", marginBottom: "12px" }}>
-                About
-              </h3>
-              <p
-                style={{
-                  fontSize: "16px",
-                  lineHeight: "1.6",
-                  color: "#333",
-                  maxWidth: "700px",
-                  margin: "0 auto",
-                }}
-              >
-                Billionaire Gang Nonprofit fuels youth and strengthens
-                communities through wellness and action — where fitness meets
-                wellness, and youth always win.
-              </p>
-            </section>
+          <h2 style={headingStyle}>About</h2>
+          <p style={paragraphStyle}>
+            Billionaire Gang Nonprofit fuels youth and strengthens communities
+            through wellness and action — where fitness meets wellness, and youth
+            always win.
+          </p>
+        </section>
 
-            {/* Mission Section */}
-<section id="mission" style={{ marginBottom: "40px", textAlign: "center" }}>
-  <h3 style={{ fontSize: "22px", fontWeight: "700", marginBottom: "12px" }}>
-    Mission
-  </h3>
-  <p
-    style={{
-      fontSize: "16px",
-      lineHeight: "1.6",
-      color: "#333",
-      maxWidth: "700px",
-      margin: "0 auto",
-    }}
-  >
-    Creating a Memphis that is safe, healthy, and rewarding for the next generation.
-  </p>
-</section>
+        {/* MISSION SECTION */}
+        <section
+          id="mission"
+          style={{
+            padding: "80px 20px",
+            backgroundColor: "#e6f0ff",
+            textAlign: "center",
+          }}
+        >
+          <h2 style={headingStyle}>Mission</h2>
+          <p style={paragraphStyle}>
+            Creating a Memphis that is safe, healthy, and rewarding for the next
+            generation.
+          </p>
+        </section>
 
-{/* Team Section */}
-<section id="team" style={{ marginBottom: "40px", textAlign: "center" }}>
-  <h3 style={{ fontSize: "22px", fontWeight: "700", marginBottom: "12px" }}>
-    Team
-  </h3>
-  <p
-    style={{
-      fontSize: "16px",
-      lineHeight: "1.6",
-      color: "#333",
-      maxWidth: "700px",
-      margin: "0 auto",
-    }}
-  >
-    Meet the people behind Billionaire Gang Nonprofit — dedicated leaders and
-    community builders working together for a stronger Memphis.
-  </p>
-</section>
+        {/* TEAM SECTION */}
+        <section
+          id="team"
+          style={{
+            padding: "80px 20px",
+            backgroundColor: "#fff",
+            textAlign: "center",
+          }}
+        >
+          <h2 style={headingStyle}>Team</h2>
+          <p style={paragraphStyle}>
+            Meet the passionate individuals working together to make Memphis thrive.
+          </p>
+        </section>
 
-
-            {children}
-          </div>
-        </main>
+        {children}
       </body>
     </html>
   );
 }
+
+/* Reusable Styles */
+const linkStyle = {
+  textDecoration: "none",
+  color: "#333",
+  fontSize: "16px",
+  fontWeight: "500",
+};
+
+const headingStyle = {
+  fontSize: "28px",
+  marginBottom: "20px",
+};
+
+const paragraphStyle = {
+  fontSize: "18px",
+  lineHeight: "1.6",
+  maxWidth: "700px",
+  margin: "0 auto",
+  color: "#444",
+};
 
 
