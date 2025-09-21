@@ -94,6 +94,23 @@ export default function RootLayout({ children }) {
           </p>
         </section>
 
+{/* Contact Section */}
+<section id="contact" style={{
+  padding: "80px 20px",
+  backgroundColor: "#f9f9f9",   // or another color/background
+  textAlign: "center",
+}}>
+  <h2 style={headingStyle}>Contact</h2>
+  <p style={paragraphStyle}>
+    Have questions or want to get involved? Reach out to us at
+    <a href="mailto:your-email@example.com" style={{ color: "#0d9488", textDecoration: "underline" }}>
+      your-email@example.com
+    </a>
+    or via social media. We’d love to hear from you.
+  </p>
+</section>
+
+
         {children}
       </body>
     </html>
