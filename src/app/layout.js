@@ -1,49 +1,34 @@
 "use client";
 
-export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body style={{ margin: 0, fontFamily: "sans-serif" }}>
-        <header
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            padding: "12px 40px",
-            borderBottom: "1px solid #ddd",
-          }}
-        >
-          {/* Logo + Title side by side */}
-          <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
-            <img
-              src="/logo.png"
-              alt="Billionaire Gang Nonprofit Logo"
-              style={{ height: "100px", width: "100px" }}
-            />
-            <h2 style={{ margin: 0 }}>Billionaire Gang Nonprofit</h2>
-          </div>
+<main
+  style={{
+    display: "flex",
+    justifyContent: "center",
+    padding: "40px",
+  }}
+>
+  <div style={{ maxWidth: "800px", width: "100%" }}>
+    {/* About Section */}
+    <section id="about" style={{ marginBottom: "40px", textAlign: "center" }}>
+      <h3 style={{ fontSize: "22px", fontWeight: "700", marginBottom: "12px" }}>
+        About
+      </h3>
+      <p
+        style={{
+          fontSize: "16px",
+          lineHeight: "1.6",
+          color: "#333",
+          maxWidth: "700px",
+          margin: "0 auto",
+        }}
+      >
+        Billionaire Gang Nonprofit fuels youth and strengthens communities
+        through wellness and action — where fitness meets wellness, and youth
+        always win.
+      </p>
+    </section>
 
-          {/* Nav Links */}
-          <nav>
-            <ul
-              style={{
-                display: "flex",
-                gap: "20px",
-                margin: 0,
-                padding: 0,
-                listStyle: "none",
-              }}
-            >
-              <li><a href="#about">About</a></li>
-              <li><a href="#mission">Mission</a></li>
-              <li><a href="#team">Team</a></li>
-            </ul>
-          </nav>
-        </header>
-
-        {children}
-      </body>
-    </html>
-  );
-}
+    {/* Mission + Team will come next */}
+  </div>
+</main>
 
