@@ -102,9 +102,9 @@ export default function RootLayout({ children }) {
 }}>
   <h2 style={headingStyle}>Contact</h2>
   <p style={paragraphStyle}>
-    Have questions or want to get involved? Reach out to us at
+    Have questions or want to get involved? Reach out to us at 
     <a href="mailto:your-email@example.com" style={{ color: "#0d9488", textDecoration: "underline" }}>
-      your-email@example.com
+      billionairegangmem@gmail.com
     </a>
     or via social media. We’d love to hear from you.
   </p>
